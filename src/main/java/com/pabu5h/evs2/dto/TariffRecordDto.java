@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.Setter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import java.time.LocalDateTime;
+//import java.time.LocalDateTime;
 
 @Builder
 @Getter@Setter
@@ -15,7 +15,8 @@ public class TariffRecordDto {
     private long id;
     @JsonProperty("tariff_timestamp")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private LocalDateTime tariffTimestamp;
+//    private LocalDateTime tariffTimestamp;
+    private String tariffTimestamp;
 
     @JsonProperty("meter_sn")
     @JsonInclude(JsonInclude.Include.NON_NULL)
