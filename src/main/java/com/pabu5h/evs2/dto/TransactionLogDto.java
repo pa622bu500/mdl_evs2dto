@@ -84,7 +84,7 @@ public class TransactionLogDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Boolean isDedicated;
 
-    public Map<String, Object> getFieldMap(){
+    public Map<String, Object> genFieldMap(){
         return Map.ofEntries(
                 Map.entry("transaction_id", transactionId),
                 Map.entry("transaction_log_timestamp", transactionLogTimestamp),
