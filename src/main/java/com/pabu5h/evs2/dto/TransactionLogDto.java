@@ -28,22 +28,22 @@ public class TransactionLogDto {
 
     @JsonProperty("topup_amt")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private double topupAmt;
+    private Double topupAmt;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private double gst;
+    private Double gst;
 
     @JsonProperty("net_amt")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private double netAmt;
+    private Double netAmt;
 
     @JsonProperty("payment_mode")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private int paymentMode;
+    private Integer paymentMode;
 
     @JsonProperty("transaction_status")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private int transactionStatus;
+    private Integer transactionStatus;
 
     @JsonProperty("credit_ref")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -54,7 +54,7 @@ public class TransactionLogDto {
 
     @JsonProperty("offer_id")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private int offerId;
+    private Integer offerId;
 
     @JsonProperty("response_timestamp")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -62,7 +62,7 @@ public class TransactionLogDto {
 
     @JsonProperty("complete_send_to_backend")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private boolean completeSendToBackend;
+    private Boolean completeSendToBackend;
 
     @JsonProperty("transaction_code")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -70,7 +70,7 @@ public class TransactionLogDto {
 
     @JsonProperty("payment_channel")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private int paymentChannel;
+    private Integer paymentChannel;
 
     @JsonProperty("transaction_status_rcved")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -78,7 +78,7 @@ public class TransactionLogDto {
 
     @JsonProperty("conversion_ratio")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private double conversionRatio;
+    private Double conversionRatio;
 
     @JsonProperty("audit_no")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -86,7 +86,7 @@ public class TransactionLogDto {
 
     @JsonProperty("is_dedeicated")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private boolean isDedicated;
+    private Boolean isDedicated;
 
     public Map<String, Object> getFieldMap(){
         return Map.ofEntries(
