@@ -45,10 +45,6 @@ public class TransactionLogDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Integer transactionStatus;
 
-    @JsonProperty("credit_ref")
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String creditRef;
-
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String currency;
 
@@ -74,7 +70,7 @@ public class TransactionLogDto {
 
     @JsonProperty("transaction_status_rcved")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String transactionStatusRcved;
+    private Integer transactionStatusRcved;
 
     @JsonProperty("conversion_ratio")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -98,7 +94,6 @@ public class TransactionLogDto {
                 Map.entry("net_amt", netAmt),
                 Map.entry("payment_mode", paymentMode),
                 Map.entry("transaction_status", transactionStatus),
-                Map.entry("credit_ref", creditRef),
                 Map.entry("currency", currency),
                 Map.entry("offer_id", offerId),
                 Map.entry("response_timestamp", responseTimestamp),
