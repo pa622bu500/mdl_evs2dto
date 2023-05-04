@@ -6,6 +6,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Map;
+
 @Builder
 @Getter
 @Setter
@@ -85,5 +87,29 @@ public class TransactionLogDto {
     @JsonProperty("is_dedeicated")
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private boolean isDedicated;
+
+    public Map<String, Object> getFieldMap(){
+        return Map.ofEntries(
+                Map.entry("transaction_id", transactionId),
+                Map.entry("transaction_timestamp", transactionTimestamp),
+                Map.entry("meter_displayname", meterDisplayname),
+                Map.entry("topup_amt", topupAmt),
+                Map.entry("gst", gst),
+                Map.entry("net_amt", netAmt),
+                Map.entry("payment_mode", paymentMode),
+                Map.entry("transaction_status", transactionStatus),
+                Map.entry("credit_ref", creditRef),
+                Map.entry("currency", currency),
+                Map.entry("offer_id", offerId),
+                Map.entry("response_timestamp", responseTimestamp),
+                Map.entry("complete_send_to_backend", completeSendToBackend),
+                Map.entry("transaction_code", transactionCode),
+                Map.entry("payment_channel", paymentChannel),
+                Map.entry("transaction_status_rcved", transactionStatusRcved),
+                Map.entry("conversion_ratio", conversionRatio),
+                Map.entry("audit_no", auditNo),
+                Map.entry("is_dedicated", isDedicated)
+        );
+    }
 
 }
