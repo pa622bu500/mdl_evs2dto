@@ -12,7 +12,7 @@ import java.util.Map;
 @Getter
 @Setter
 public class TransactionLogDto {
-    private long id;
+//    private long id;
 
     @JsonProperty("transaction_id")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -84,7 +84,7 @@ public class TransactionLogDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String auditNo;
 
-    @JsonProperty("is_dedeicated")
+    @JsonProperty("is_dedicated")
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Boolean isDedicated;
 
