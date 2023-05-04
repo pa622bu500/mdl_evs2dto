@@ -62,7 +62,7 @@ public class TransactionLogDto {
 
     @JsonProperty("complete_send_to_backend")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String completeSendToBackend;
+    private boolean completeSendToBackend;
 
     @JsonProperty("transaction_code")
     @JsonInclude(JsonInclude.Include.NON_NULL)
