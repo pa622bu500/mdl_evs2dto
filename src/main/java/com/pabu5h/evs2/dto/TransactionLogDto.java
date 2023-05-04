@@ -18,9 +18,9 @@ public class TransactionLogDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String transactionId;
 
-    @JsonProperty("transaction_timestamp")
+    @JsonProperty("transaction_log_timestamp")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String transactionTimestamp;
+    private String transactionLogTimestamp;
 
     @JsonProperty("meter_displayname")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -91,7 +91,7 @@ public class TransactionLogDto {
     public Map<String, Object> getFieldMap(){
         return Map.ofEntries(
                 Map.entry("transaction_id", transactionId),
-                Map.entry("transaction_timestamp", transactionTimestamp),
+                Map.entry("transaction_log_timestamp", transactionLogTimestamp),
                 Map.entry("meter_displayname", meterDisplayname),
                 Map.entry("topup_amt", topupAmt),
                 Map.entry("gst", gst),
