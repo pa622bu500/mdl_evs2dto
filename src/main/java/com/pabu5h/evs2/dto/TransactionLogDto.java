@@ -70,7 +70,7 @@ public class TransactionLogDto {
 
     @JsonProperty("payment_channel")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String paymentChannel;
+    private int paymentChannel;
 
     @JsonProperty("transaction_status_rcved")
     @JsonInclude(JsonInclude.Include.NON_NULL)
