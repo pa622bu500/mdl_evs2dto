@@ -97,13 +97,13 @@ public class TransactionLogDto {
                 Map.entry("currency", currency),
                 Map.entry("offer_id", offerId),
                 Map.entry("response_timestamp", responseTimestamp),
-                Map.entry("complete_send_to_backend", completeSendToBackend),
+                Map.entry("complete_send_to_backend", completeSendToBackend?1:0),
                 Map.entry("transaction_code", transactionCode),
                 Map.entry("payment_channel", paymentChannel),
                 Map.entry("transaction_status_rcved", transactionStatusRcved),
                 Map.entry("conversion_ratio", conversionRatio),
                 Map.entry("audit_no", auditNo),
-                Map.entry("is_dedicated", isDedicated)
+                Map.entry("is_dedicated", isDedicated?1:0)
         );
     }
 
