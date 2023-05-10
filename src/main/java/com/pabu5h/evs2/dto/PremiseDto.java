@@ -25,6 +25,7 @@ public class PremiseDto {
     @JsonProperty("postal_code")
     private String postalCode;
 
+    //use builder
 //    public PremiseDto(Map<String, Object> fieldMap){
 //        fromFieldMap(fieldMap);
 //    }
@@ -45,5 +46,27 @@ public class PremiseDto {
         map.put("building", building);
         map.put("postal_code", postalCode);
         return map;
+    }
+
+    public String genAddress(String separator){
+        StringBuilder sb = new StringBuilder();
+        if (unit != null) {
+            sb.append(unit).append(separator);
+        }
+        if (level != null) {
+            sb.append(level).append(separator);
+        }
+        if (block != null) {
+            sb.append(block).append(separator);
+        }
+        if (building != null) {
+            sb.append(building).append(separator);
+        }
+        if (postalCode != null) {
+            sb.append(postalCode);
+        }else {
+            sb.deleteCharAt(sb.length() - 1);
+        }
+        return sb.toString();
     }
 }

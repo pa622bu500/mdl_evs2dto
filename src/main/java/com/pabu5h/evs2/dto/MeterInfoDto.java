@@ -60,37 +60,37 @@ public class MeterInfoDto {
         map.put("reading_interval", readingInterval);
         return map;
     }
-    public MeterInfoDto fromFieldMap(Map<String, Object> fieldMap){
-        this.meterSn = fieldMap.get("meter_sn")!=null?
-            fieldMap.get("meter_sn").toString():null;
-        this.meterDisplayname = fieldMap.get("meter_displayname") != null?
-            fieldMap.get("meter_displayname").toString():null;
-
-        Map<String, Object> premiseMap = fieldMap.get("premise")!=null?
-            (Map<String, Object>) fieldMap.get("premise"):null;
-        PremiseDto premiseDto = PremiseDto.builder()
-                .unit(premiseMap.get("unit")!=null?
-                    premiseMap.get("unit").toString():null)
-                .level(premiseMap.get("level")!=null?
-                    premiseMap.get("level").toString():null)
-                .block(premiseMap.get("block")!=null? premiseMap.get("block").toString():null)
-                .building(premiseMap.get("building")!=null? premiseMap.get("building").toString():null)
-                .postalCode(premiseMap.get("postal_code")!=null? premiseMap.get("postal_code").toString():null)
-                .build();
-        this.premise = premiseMap != null? premiseDto:null;
-
-        this.address = (String) fieldMap.get("address") != null?
-            fieldMap.get("address").toString():null;
-        this.status = (String) fieldMap.get("status")!=null?
-            fieldMap.get("status").toString():null;
-        this.rlsStatus = (String) fieldMap.get("rls_status")!=null?
-            fieldMap.get("rls_status").toString():null;
-        this.kwhTimestamp = fieldMap.get("kwh_timestamp")!=null?
-            DateTimeUtil.getLocalDateTime(fieldMap.get("kwh_timestamp").toString()):null;
-        this.kwhReading = (float) fieldMap.get("kwh_reading");
-        this.current = (float) fieldMap.get("current");
-        this.voltage = (float) fieldMap.get("voltage");
-        this.readingInterval = (long) fieldMap.get("reading_interval");
-        return this;
-    }
+//    public MeterInfoDto fromFieldMap(Map<String, Object> fieldMap){
+//        this.meterSn = fieldMap.get("meter_sn")!=null?
+//            fieldMap.get("meter_sn").toString():null;
+//        this.meterDisplayname = fieldMap.get("meter_displayname") != null?
+//            fieldMap.get("meter_displayname").toString():null;
+//
+//        Map<String, Object> premiseMap = fieldMap.get("premise")!=null?
+//            (Map<String, Object>) fieldMap.get("premise"):null;
+//        PremiseDto premiseDto = PremiseDto.builder()
+//                .unit(premiseMap.get("unit")!=null?
+//                    premiseMap.get("unit").toString():null)
+//                .level(premiseMap.get("level")!=null?
+//                    premiseMap.get("level").toString():null)
+//                .block(premiseMap.get("block")!=null? premiseMap.get("block").toString():null)
+//                .building(premiseMap.get("building")!=null? premiseMap.get("building").toString():null)
+//                .postalCode(premiseMap.get("postal_code")!=null? premiseMap.get("postal_code").toString():null)
+//                .build();
+//        this.premise = premiseMap != null? premiseDto:null;
+//
+//        this.address = (String) fieldMap.get("address") != null?
+//            fieldMap.get("address").toString():null;
+//        this.status = (String) fieldMap.get("status")!=null?
+//            fieldMap.get("status").toString():null;
+//        this.rlsStatus = (String) fieldMap.get("rls_status")!=null?
+//            fieldMap.get("rls_status").toString():null;
+//        this.kwhTimestamp = fieldMap.get("kwh_timestamp")!=null?
+//            DateTimeUtil.getLocalDateTime(fieldMap.get("kwh_timestamp").toString()):null;
+//        this.kwhReading = (float) fieldMap.get("kwh_reading");
+//        this.current = (float) fieldMap.get("current");
+//        this.voltage = (float) fieldMap.get("voltage");
+//        this.readingInterval = (long) fieldMap.get("reading_interval");
+//        return this;
+//    }
 }
