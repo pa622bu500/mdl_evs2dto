@@ -68,7 +68,15 @@ public class MeterInfoDto {
 
         Map<String, Object> premiseMap = fieldMap.get("premise")!=null?
             (Map<String, Object>) fieldMap.get("premise"):null;
-        PremiseDto premiseDto = new PremiseDto(fieldMap);
+        PremiseDto premiseDto = PremiseDto.builder()
+                .unit(premiseMap.get("unit")!=null?
+                    premiseMap.get("unit").toString():null)
+                .level(premiseMap.get("level")!=null?
+                    premiseMap.get("level").toString():null)
+                .block(premiseMap.get("block")!=null? premiseMap.get("block").toString():null)
+                .building(premiseMap.get("building")!=null? premiseMap.get("building").toString():null)
+                .postalCode(premiseMap.get("postal_code")!=null? premiseMap.get("postal_code").toString():null)
+                .build();
         this.premise = premiseMap != null? premiseDto:null;
 
         this.address = (String) fieldMap.get("address") != null?

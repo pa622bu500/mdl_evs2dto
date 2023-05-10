@@ -25,17 +25,17 @@ public class PremiseDto {
     @JsonProperty("postal_code")
     private String postalCode;
 
-    public PremiseDto(Map<String, Object> fieldMap){
-        fromFieldMap(fieldMap);
-    }
-    public PremiseDto fromFieldMap(Map<String, Object> fieldMap){
-        this.unit = (String) fieldMap.get("unit");
-        this.level = (String) fieldMap.get("level");
-        this.block = (String) fieldMap.get("block");
-        this.building = (String) fieldMap.get("building");
-        this.postalCode = (String) fieldMap.get("postal_code");
-        return this;
-    }
+//    public PremiseDto(Map<String, Object> fieldMap){
+//        fromFieldMap(fieldMap);
+//    }
+//    public PremiseDto fromFieldMap(Map<String, Object> fieldMap){
+//        this.unit = (String) fieldMap.get("unit");
+//        this.level = (String) fieldMap.get("level");
+//        this.block = (String) fieldMap.get("block");
+//        this.building = (String) fieldMap.get("building");
+//        this.postalCode = (String) fieldMap.get("postal_code");
+//        return this;
+//    }
 
     public Map<String, Object> toFieldMap(){
         Map<String, Object> map = new HashMap<>();
