@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Map;
 
 @Getter@Setter
 @Builder
@@ -39,4 +41,19 @@ public class MeterInfoDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("reading_interval")
     private long readingInterval;
+
+    public Map<String, Object> genFiledMap(){
+        Map<String, Object> map = new HashMap<>();
+        map.put("meter_sn", meterSn);
+        map.put("meter_displayname", meterDisplayname);
+        map.put("address", address);
+        map.put("status", status);
+        map.put("rls_status", rlsStatus);
+        map.put("kwh_timestamp", kwhTimestamp);
+        map.put("kwh_reading", kwhReading);
+        map.put("current", current);
+        map.put("voltage", voltage);
+        map.put("reading_interval", readingInterval);
+        return map;
+    }
 }
