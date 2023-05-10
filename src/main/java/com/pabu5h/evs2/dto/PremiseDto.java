@@ -66,7 +66,8 @@ public class PremiseDto {
             sb.append(postalCode);
         }else {
             if(sb.length() >= separator.length()) {
-                sb.deleteCharAt(sb.length() - 1 - separator.length());
+                //delete the last separator
+                sb.delete(sb.length() - separator.length(), sb.length());
             }
         }
         return sb.toString();
