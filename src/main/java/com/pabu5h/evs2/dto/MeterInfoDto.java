@@ -73,6 +73,9 @@ public class MeterInfoDto {
         map.put("current", current);
         map.put("voltage", voltage);
         map.put("reading_interval", readingInterval);
+        map.put("mms_address", mmsAddress);
+        map.put("mms_building", mmsBuilding);
+        map.put("mms_block", mmsBlock);
         map.put("esim_id", esimId);
         map.put("data_subscription_id", dataSubscriptionId);
 
