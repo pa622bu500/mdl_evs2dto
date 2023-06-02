@@ -44,6 +44,21 @@ public class MeterInfoDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("reading_interval")
     private long readingInterval;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("mms_address")
+    private String mmsAddress;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("mms_building")
+    private String mmsBuilding;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("mms_block")
+    private String mmsBlock;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("esim_id")
+    private String esimId;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("data_subscription_id")
+    private String dataSubscriptionId;
 
     public Map<String, Object> toFiledMap(){
         Map<String, Object> map = new HashMap<>();
@@ -58,6 +73,9 @@ public class MeterInfoDto {
         map.put("current", current);
         map.put("voltage", voltage);
         map.put("reading_interval", readingInterval);
+        map.put("esim_id", esimId);
+        map.put("data_subscription_id", dataSubscriptionId);
+
         return map;
     }
 //    public MeterInfoDto fromFieldMap(Map<String, Object> fieldMap){
