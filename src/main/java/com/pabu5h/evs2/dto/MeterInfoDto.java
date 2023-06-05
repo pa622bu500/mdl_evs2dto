@@ -23,6 +23,9 @@ public class MeterInfoDto {
     @JsonProperty("meter_displayname")
     private String meterDisplayname;
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("concentrator_id")
+    private String concentratorId;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private PremiseDto premise;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String address;
@@ -64,6 +67,7 @@ public class MeterInfoDto {
         Map<String, Object> map = new HashMap<>();
         map.put("meter_sn", meterSn);
         map.put("meter_displayname", meterDisplayname);
+        map.put("concentrator_id", concentratorId);
         map.put("premise", premise);
         map.put("address", address);
         map.put("status", status);
