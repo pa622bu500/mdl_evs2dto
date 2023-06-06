@@ -57,6 +57,9 @@ public class MeterInfoDto {
     @JsonProperty("mms_block")
     private String mmsBlock;
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("mms_level")
+    private String mmsLevel;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("esim_id")
     private String esimId;
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -80,6 +83,7 @@ public class MeterInfoDto {
         map.put("mms_address", mmsAddress);
         map.put("mms_building", mmsBuilding);
         map.put("mms_block", mmsBlock);
+        map.put("mms_level", mmsLevel);
         map.put("esim_id", esimId);
         map.put("data_subscription_id", dataSubscriptionId);
 
