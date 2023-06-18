@@ -58,10 +58,10 @@ public class MeterInfoDto {
     private String mmsBlock;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("mms_level")
-    private String mmsPostalCode;
+    private String mmsLevel;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("mms_postal_code")
-    private String mmsLevel;
+    private String mmsPostalCode;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("esim_id")
     private String esimId;
