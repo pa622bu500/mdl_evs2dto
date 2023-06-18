@@ -22,6 +22,8 @@ public class PremiseDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String building;
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    private String street;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("postal_code")
     private String postalCode;
 
@@ -44,6 +46,7 @@ public class PremiseDto {
         map.put("level", level);
         map.put("block", block);
         map.put("building", building);
+        map.put("street", street);
         map.put("postal_code", postalCode);
         return map;
     }
@@ -61,6 +64,9 @@ public class PremiseDto {
         }
         if (building != null) {
             sb.append(building).append(separator);
+        }
+        if (street != null) {
+            sb.append(street).append(separator);
         }
         if (postalCode != null) {
             sb.append(postalCode);
