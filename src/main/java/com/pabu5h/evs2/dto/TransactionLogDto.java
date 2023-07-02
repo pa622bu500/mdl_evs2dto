@@ -84,6 +84,10 @@ public class TransactionLogDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Boolean isDedicated;
 
+    @JsonProperty("nps_resp")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private String npsResp;
+
     public Map<String, Object> genFieldMap(){
         return Map.ofEntries(
                 Map.entry("transaction_id", transactionId),
@@ -103,7 +107,8 @@ public class TransactionLogDto {
                 Map.entry("transaction_status_rcved", transactionStatusRcved),
                 Map.entry("conversion_ratio", conversionRatio),
                 Map.entry("audit_no", auditNo),
-                Map.entry("is_dedicated", isDedicated?1:0)
+                Map.entry("is_dedicated", isDedicated?1:0),
+                Map.entry("nps_resp", npsResp)
         );
     }
 
