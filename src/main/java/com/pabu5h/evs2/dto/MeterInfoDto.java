@@ -11,8 +11,8 @@ import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
-//@Getter@Setter
-@Data
+@Getter@Setter
+//@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
@@ -138,10 +138,9 @@ public class MeterInfoDto {
 
     static ObjectMapper mapper = new ObjectMapper();
     public static MeterInfoDto fromFieldMap(Map<String, Object> fieldMap) {
-        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         try {
-            MeterInfoDto meterInfoDto = mapper.convertValue(fieldMap, MeterInfoDto.class);
-            return meterInfoDto;
+            return mapper.convertValue(fieldMap, MeterInfoDto.class);
         } catch (Exception e) {
             e.printStackTrace();
         }

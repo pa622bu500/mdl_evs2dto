@@ -7,10 +7,9 @@ import lombok.*;
 import java.util.HashMap;
 import java.util.Map;
 
-//@Getter
-//@Setter
+@Getter@Setter
 @Builder
-@Data
+//@Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class PremiseDto {
