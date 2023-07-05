@@ -2,6 +2,8 @@ package com.pabu5h.evs2.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.xt.utils.DateTimeUtil;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -134,4 +136,16 @@ public class MeterInfoDto {
 //        this.readingInterval = (long) fieldMap.get("reading_interval");
 //        return this;
 //    }
+
+    static ObjectMapper mapper = new ObjectMapper();
+    public static MeterInfoDto fromFieldMap(Map<String, Object> fieldMap) {
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        try {
+            MeterInfoDto meterInfoDto = mapper.convertValue(fieldMap, MeterInfoDto.class);
+            return meterInfoDto;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
