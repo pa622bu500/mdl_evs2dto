@@ -2,10 +2,7 @@ package com.pabu5h.evs2.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,6 +11,8 @@ import java.util.Map;
 //@Setter
 @Builder
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class PremiseDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String unit;

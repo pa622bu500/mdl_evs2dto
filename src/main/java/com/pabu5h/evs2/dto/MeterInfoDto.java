@@ -14,6 +14,7 @@ import java.util.Map;
 //@Getter@Setter
 @Data
 @Builder
+@NoArgsConstructor
 @AllArgsConstructor
 public class MeterInfoDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
