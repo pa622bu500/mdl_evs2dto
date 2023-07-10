@@ -70,11 +70,17 @@ public class MeterInfoDto {
     @JsonProperty("mms_postal_code")
     private String mmsPostalCode;
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("mms_online_timestamp")
+    private LocalDateTime mmsOnlineTimestamp;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("esim_id")
     private String esimId;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("data_subscription_id")
     private String dataSubscriptionId;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("scope_str")
+    private String scopeStr;
 
     public Map<String, Object> toFiledMap(){
         Map<String, Object> map = new HashMap<>();
@@ -97,8 +103,10 @@ public class MeterInfoDto {
         map.put("mms_level", mmsLevel);
         map.put("mms_unit", mmsUnit);
         map.put("mms_postal_code", mmsPostalCode);
+        map.put("mms_online_timestamp", mmsOnlineTimestamp);
         map.put("esim_id", esimId);
         map.put("data_subscription_id", dataSubscriptionId);
+        map.put("scope_str", scopeStr);
 
         return map;
     }
