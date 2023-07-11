@@ -82,6 +82,9 @@ public class MeterInfoDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("scope_str")
     private String scopeStr;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("daily_usage_timestamp")
+    private LocalDateTime dailyUsageTimestamp;
 
     public Map<String, Object> toFiledMap(){
         Map<String, Object> map = new HashMap<>();
@@ -108,6 +111,7 @@ public class MeterInfoDto {
         map.put("esim_id", esimId);
         map.put("data_subscription_id", dataSubscriptionId);
         map.put("scope_str", scopeStr);
+        map.put("daily_usage_timestamp", dailyUsageTimestamp);
 
         return map;
     }
