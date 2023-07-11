@@ -144,6 +144,7 @@ public class MeterInfoDto {
 //        return this;
 //    }
 
+    //if field have LocalDateTime, will require Jackson dependency
     static ObjectMapper mapper = new ObjectMapper();
     public static MeterInfoDto fromFieldMap(Map<String, Object> fieldMap) {
 //        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
