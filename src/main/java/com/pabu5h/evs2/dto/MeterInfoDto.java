@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.xt.utils.DateTimeUtil;
 import lombok.*;
 
@@ -148,6 +149,8 @@ public class MeterInfoDto {
     static ObjectMapper mapper = new ObjectMapper();
     public static MeterInfoDto fromFieldMap(Map<String, Object> fieldMap) {
 //        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        //add LocalDateTime module
+        mapper.registerModule(new JavaTimeModule());
         try {
             return mapper.convertValue(fieldMap, MeterInfoDto.class);
         } catch (Exception e) {
