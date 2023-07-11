@@ -154,13 +154,16 @@ public class MeterInfoDto {
     //if field have LocalDateTime, will require Jackson dependency
     static ObjectMapper mapper = new ObjectMapper();
     public static MeterInfoDto fromFieldMap(Map<String, Object> fieldMap) {
-//        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         //add LocalDateTime module
         JavaTimeModule javaTimeModule=new JavaTimeModule();
         // Hack time module to allow 'Z' at the end of string (i.e. javascript json's)
         javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ISO_DATE_TIME));
         //add format for "yyyy-MM-dd HH:mm:ss"
         javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        //add format for "yyyy-MM-dd HH:mm:ss.SSS"
+        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")));
+//        mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
         mapper.registerModule(javaTimeModule);
         try {
             return mapper.convertValue(fieldMap, MeterInfoDto.class);
