@@ -158,7 +158,7 @@ public class MeterInfoDto {
         //add LocalDateTime module
         JavaTimeModule javaTimeModule=new JavaTimeModule();
         // Hack time module to allow 'Z' at the end of string (i.e. javascript json's)
-        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ISO_DATE_TIME));
+//        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ISO_DATE_TIME));
         //add format for "yyyy-MM-dd HH:mm:ss"
         javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         //add format for "yyyy-MM-dd HH:mm:ss.SSS"
