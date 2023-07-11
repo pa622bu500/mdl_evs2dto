@@ -5,10 +5,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.xt.utils.DateTimeUtil;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -154,7 +156,12 @@ public class MeterInfoDto {
     public static MeterInfoDto fromFieldMap(Map<String, Object> fieldMap) {
 //        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         //add LocalDateTime module
-        mapper.registerModule(new JavaTimeModule());
+        JavaTimeModule javaTimeModule=new JavaTimeModule();
+        // Hack time module to allow 'Z' at the end of string (i.e. javascript json's)
+        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ISO_DATE_TIME));
+        //add format for "yyyy-MM-dd HH:mm:ss"
+        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+        mapper.registerModule(javaTimeModule);
         try {
             return mapper.convertValue(fieldMap, MeterInfoDto.class);
         } catch (Exception e) {
