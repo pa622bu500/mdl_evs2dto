@@ -166,7 +166,15 @@ public class MeterInfoDto {
 //        mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
         mapper.registerModule(javaTimeModule);
         try {
-            return mapper.convertValue(fieldMap, MeterInfoDto.class);
+            MeterInfoDto meterInfoDto = mapper.convertValue(fieldMap, MeterInfoDto.class);
+            PremiseDto premiseDto = PremiseDto.builder().building(meterInfoDto.getMmsBuilding())
+                    .block(meterInfoDto.getMmsBlock())
+                    .level(meterInfoDto.getMmsLevel())
+                    .postalCode(meterInfoDto.getMmsPostalCode())
+                    .street(meterInfoDto.getMmsStreet())
+                    .unit(meterInfoDto.getMmsUnit())
+                    .build();
+            meterInfoDto.setPremise(premiseDto);
         } catch (Exception e) {
             e.printStackTrace();
         }
