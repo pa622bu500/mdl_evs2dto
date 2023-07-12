@@ -175,6 +175,7 @@ public class MeterInfoDto {
                     .unit(meterInfoDto.getMmsUnit())
                     .build();
             meterInfoDto.setPremise(premiseDto);
+            return meterInfoDto;
         } catch (Exception e) {
             e.printStackTrace();
         }
