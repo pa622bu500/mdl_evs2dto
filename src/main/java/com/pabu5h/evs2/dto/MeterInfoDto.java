@@ -4,9 +4,11 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.module.SimpleModule;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
 import com.xt.utils.DateTimeUtil;
+import com.xt.utils.LocalDateTimeMultiDeserializer;
 import lombok.*;
 
 import java.time.LocalDateTime;
@@ -156,15 +158,18 @@ public class MeterInfoDto {
     public static MeterInfoDto fromFieldMap(Map<String, Object> fieldMap) {
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
         //add LocalDateTime module
-        JavaTimeModule javaTimeModule=new JavaTimeModule();
+//        JavaTimeModule javaTimeModule=new JavaTimeModule();
         // Hack time module to allow 'Z' at the end of string (i.e. javascript json's)
 //        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ISO_DATE_TIME));
         //add format for "yyyy-MM-dd HH:mm:ss"
-        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+//        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
         //add format for "yyyy-MM-dd HH:mm:ss.SSS"
 //        javaTimeModule.addDeserializer(LocalDateTime.class, new LocalDateTimeDeserializer(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS")));
 //        mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);
-        mapper.registerModule(javaTimeModule);
+//        mapper.registerModule(javaTimeModule);
+        SimpleModule module = new SimpleModule();
+        module.addDeserializer(LocalDateTime.class, new LocalDateTimeMultiDeserializer());
+        mapper.registerModule(module);
         try {
             MeterInfoDto meterInfoDto = mapper.convertValue(fieldMap, MeterInfoDto.class);
             PremiseDto premiseDto = PremiseDto.builder().building(meterInfoDto.getMmsBuilding())
