@@ -17,7 +17,9 @@ public class TransactionDef {
                     4, "Virtual",
                     5, "Credit Card",
                     6, "Credit Card",
-                    11, "NETS Online QR");
+                    11, "NETS Online QR",
+                    21, "Stripe Card");
+
     public final static Map<Integer, String> paymentChannel =
             Map.of(
                     1, "EVS Ops Portal",
