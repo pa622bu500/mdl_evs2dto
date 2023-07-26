@@ -180,6 +180,7 @@ public class MeterInfoDto {
                     .unit(meterInfoDto.getMmsUnit())
                     .build();
             meterInfoDto.setPremise(premiseDto);
+            meterInfoDto.setAddress(meterInfoDto.getMmsAddress());
             return meterInfoDto;
         } catch (Exception e) {
             e.printStackTrace();
