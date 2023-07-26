@@ -94,26 +94,27 @@ public class TransactionLogDto {
 
     public Map<String, Object> genFieldMap(){
         return Map.ofEntries(
-                Map.entry("transaction_id", transactionId),
-                Map.entry("transaction_log_timestamp", transactionLogTimestamp),
-                Map.entry("meter_displayname", meterDisplayname),
-                Map.entry("topup_amt", topupAmt),
-                Map.entry("gst", gst),
-                Map.entry("net_amt", netAmt),
-                Map.entry("payment_mode", paymentMode),
-                Map.entry("transaction_status", transactionStatus),
-                Map.entry("currency", currency),
-                Map.entry("offer_id", offerId),
-                Map.entry("response_timestamp", responseTimestamp),
-                Map.entry("complete_send_to_backend", completeSendToBackend?1:0),
-                Map.entry("transaction_code", transactionCode),
-                Map.entry("payment_channel", paymentChannel),
-                Map.entry("transaction_status_rcved", transactionStatusRcved),
-                Map.entry("conversion_ratio", conversionRatio),
-                Map.entry("audit_no", auditNo),
-                Map.entry("is_dedicated", isDedicated?1:0),
-                Map.entry("nps_resp", npsResp),
-                Map.entry("approval_code", approvalCode)
+               //NOTE: Map.entry requires non-null key and value
+               Map.entry("transaction_id", transactionId),
+               Map.entry("transaction_log_timestamp", transactionLogTimestamp),
+               Map.entry("meter_displayname", meterDisplayname),
+               Map.entry("topup_amt", topupAmt),
+               Map.entry("gst", gst),
+               Map.entry("net_amt", netAmt),
+               Map.entry("payment_mode", paymentMode),
+               Map.entry("transaction_status", transactionStatus),
+               Map.entry("currency", currency),
+               Map.entry("offer_id", offerId),
+               Map.entry("response_timestamp", responseTimestamp),
+               Map.entry("complete_send_to_backend", completeSendToBackend?1:0),
+               Map.entry("transaction_code", transactionCode),
+               Map.entry("payment_channel", paymentChannel),
+               Map.entry("transaction_status_rcved", transactionStatusRcved),
+               Map.entry("conversion_ratio", conversionRatio),
+               Map.entry("audit_no", auditNo == null ? "" : auditNo),
+               Map.entry("is_dedicated", isDedicated ? 1 : 0),
+               Map.entry("nps_resp", npsResp == null ? "" : npsResp),
+               Map.entry("approval_code", approvalCode == null ? "" : approvalCode)
         );
     }
 
