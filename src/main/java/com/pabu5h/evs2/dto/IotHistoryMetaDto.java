@@ -18,4 +18,8 @@ public class IotHistoryMetaDto {
     double maxVal;
     @JsonProperty("avg_val")
     double avgVal;
+    @JsonProperty("total")
+    double total;
+    @JsonProperty("positive_count")
+    long positiveCount;
 }
