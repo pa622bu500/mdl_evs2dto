@@ -91,7 +91,7 @@ public class MeterInfoDto {
     private LocalDateTime dailyUsageTimestamp;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("tariff_price")
-    private String tariffPrice;
+    private double tariffPrice;
 
     public Map<String, Object> toFiledMap(){
         Map<String, Object> map = new HashMap<>();
