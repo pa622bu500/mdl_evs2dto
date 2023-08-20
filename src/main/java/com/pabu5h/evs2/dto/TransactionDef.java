@@ -18,6 +18,7 @@ public class TransactionDef {
                     5, "Credit Card",
                     6, "Credit Card",
                     11, "NETS Online QR",
+                    12, "eNETS Credit/Debit",
                     21, "Stripe Card");
 
     public final static Map<Integer, String> paymentChannel =
