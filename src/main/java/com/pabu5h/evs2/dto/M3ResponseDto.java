@@ -31,6 +31,6 @@ public class M3ResponseDto<T> {
     String rls;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("rls_mid")
+//    @JsonProperty("rls_mid")
     String rlsMid;
 }
