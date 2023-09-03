@@ -92,6 +92,8 @@ public class MeterInfoDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("tariff_price")
     private double tariffPrice;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private MeterBypassDto bypass;
 
     public Map<String, Object> toFiledMap(){
         Map<String, Object> map = new HashMap<>();
@@ -176,7 +178,8 @@ public class MeterInfoDto {
         mapper.registerModule(module);
         try {
             MeterInfoDto meterInfoDto = mapper.convertValue(fieldMap, MeterInfoDto.class);
-            PremiseDto premiseDto = PremiseDto.builder().building(meterInfoDto.getMmsBuilding())
+            PremiseDto premiseDto = PremiseDto.builder()
+                    .building(meterInfoDto.getMmsBuilding())
                     .block(meterInfoDto.getMmsBlock())
                     .level(meterInfoDto.getMmsLevel())
                     .postalCode(meterInfoDto.getMmsPostalCode())
