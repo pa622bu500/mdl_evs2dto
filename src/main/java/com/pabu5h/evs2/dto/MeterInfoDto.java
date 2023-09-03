@@ -93,7 +93,8 @@ public class MeterInfoDto {
     @JsonProperty("tariff_price")
     private double tariffPrice;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private MeterBypassDto bypass;
+    @JsonProperty("bypass_policy")
+    private MeterBypassDto bypassPolicy;
 
     public Map<String, Object> toFiledMap(){
         Map<String, Object> map = new HashMap<>();
@@ -122,6 +123,7 @@ public class MeterInfoDto {
         map.put("scope_str", scopeStr);
         map.put("daily_usage_timestamp", dailyUsageTimestamp);
         map.put("tariff_price", tariffPrice);
+        map.put("bypass_policy", bypassPolicy);
 
         return map;
     }
