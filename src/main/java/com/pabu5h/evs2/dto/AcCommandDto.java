@@ -13,7 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class AcCommandDto {
 
-	CredentialDto credential;
+	QueryCredDto credential;
 	
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	@JsonProperty("meter_sn")

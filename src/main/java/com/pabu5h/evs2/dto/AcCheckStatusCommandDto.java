@@ -14,7 +14,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class AcCheckStatusCommandDto {
 
-	CredentialDto credential;
+	QueryCredDto credential;
 	
 	@JsonInclude(JsonInclude.Include.NON_NULL)
 	@JsonProperty("meter_sn")
