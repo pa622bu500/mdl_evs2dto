@@ -66,4 +66,15 @@ public class MeterBypassDto {
             return null;
         }
     }
+
+    @Override
+    public String toString(){
+        return "bypass_always: " + bypassAlways + ", " +
+                "bypass1_start_timestamp: " + bypass1StartTimestamp + ", " +
+                "bypass1_end_timestamp: " + bypass1EndTimestamp + ", " +
+                "bypass2_start_timestamp: " + bypass2StartTimestamp + ", " +
+                "bypass2_end_timestamp: " + bypass2EndTimestamp + ", " +
+                "bypass3_start_timestamp: " + bypass3StartTimestamp + ", " +
+                "bypass3_end_timestamp: " + bypass3EndTimestamp;
+    }
 }
