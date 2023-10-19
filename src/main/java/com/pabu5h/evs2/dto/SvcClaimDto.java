@@ -14,7 +14,7 @@ public class SvcClaimDto {
     private final String username;
     @JsonProperty("user_id")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private final String userId;
+    private final long userId;
     @JsonProperty("svc_name")
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private final String svcName;
