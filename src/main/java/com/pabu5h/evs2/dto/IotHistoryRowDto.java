@@ -8,6 +8,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Map;
 
 @Getter@Setter
 @Builder
@@ -30,5 +32,5 @@ public class IotHistoryRowDto {
     boolean isEstimated;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("readings")
-    double[] readings;
+    List<Map<String, Double>> readings;
 }
