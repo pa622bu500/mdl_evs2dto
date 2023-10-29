@@ -29,12 +29,6 @@ public class IotHistoryRowDto {
     @JsonProperty("is_estimated")
     boolean isEstimated;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("readingL1")
-    double readingL1;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("readingL2")
-    double readingL2;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("readingL3")
-    double readingL3;
+    @JsonProperty("readings")
+    double[] readings;
 }
