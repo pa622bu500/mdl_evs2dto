@@ -22,6 +22,12 @@ public class IotHistoryMetaDto {
     @JsonProperty("max_val")
     double maxVal;
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("min_val")
+    double minVal;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("min_val_non_zero")
+    double minValNonZero;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("avg_val")
     double avgVal;
     @JsonInclude(JsonInclude.Include.NON_NULL)
