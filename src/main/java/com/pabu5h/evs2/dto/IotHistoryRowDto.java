@@ -30,9 +30,27 @@ public class IotHistoryRowDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("is_estimated")
     boolean isEstimated;
+//    @JsonInclude(JsonInclude.Include.NON_NULL)
+//    @JsonProperty("readings")
+//    List<Map<String, Double>> readings;
+//    @JsonProperty("reading_diff")
+//    List<Map<String, Double>> readingDiffs;
+
+    /* sample:
+    {
+        "fieldKey1":
+        {
+            "reading_total": 123.45,
+            "reading_diff": 0.0,
+        },
+        "fieldKey2":
+        {
+            "reading_total": 123.45,
+            "reading_diff": 0.0,
+        }
+    }
+     */
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("readings")
-    List<Map<String, Double>> readings;
-    @JsonProperty("reading_diff")
-    List<Map<String, Double>> readingDiffs;
+    Map<String, Map<String, Double>> readings;
 }
