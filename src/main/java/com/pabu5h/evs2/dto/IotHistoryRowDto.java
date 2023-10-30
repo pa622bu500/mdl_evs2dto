@@ -42,14 +42,14 @@ public class IotHistoryRowDto {
         "fieldKey1":
         {
             "reading_total": 123.45,
-            "reading_total_is_estimated": false,
+            "reading_total_is_est": false,
             "reading_diff": 0.0,
         },
         "fieldKey2":
         {
             "reading_total": 123.45,
             "reading_diff": 0.0,
-            "reading_diff_is_estimated": true,
+            "reading_diff_is_est": true,
         }
     }
      */
