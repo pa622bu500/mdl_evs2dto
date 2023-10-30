@@ -31,6 +31,9 @@ public class IotHistoryMetaDto {
     @JsonProperty("avg_val")
     double avgVal;
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("median_val")
+    double medianVal;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("total")
     double total;
     @JsonInclude(JsonInclude.Include.NON_NULL)
