@@ -10,6 +10,7 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @Getter@Setter
 @Builder
@@ -41,16 +42,18 @@ public class IotHistoryRowDto {
         "fieldKey1":
         {
             "reading_total": 123.45,
+            "reading_total_is_estimated": false,
             "reading_diff": 0.0,
         },
         "fieldKey2":
         {
             "reading_total": 123.45,
             "reading_diff": 0.0,
+            "reading_diff_is_estimated": true,
         }
     }
      */
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("readings")
-    Map<String, Map<String, Double>> readings;
+    Map<String, Map<String, Objects>> readings;
 }
