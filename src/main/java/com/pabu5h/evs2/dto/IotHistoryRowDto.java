@@ -55,5 +55,5 @@ public class IotHistoryRowDto {
      */
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("readings")
-    Map<String, Map<String, Objects>> readings;
+    Map<String, Map<String, Object>> readings;
 }
