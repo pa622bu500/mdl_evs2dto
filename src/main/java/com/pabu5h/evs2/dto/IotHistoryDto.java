@@ -13,6 +13,7 @@ import java.util.Map;
 @AllArgsConstructor
 public class IotHistoryDto {
     List<IotHistoryRowDto> history;
+    List<IotHistoryRowDto2> history2;
     IotHistoryMetaDto meta;
     //for multiple readings
     Map<String, IotHistoryMetaDto> metas;
