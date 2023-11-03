@@ -56,24 +56,4 @@ public class IotHistoryRowDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("readings")
     Map<String, Map<String, Object>> readings;
-
-    //data saver with short names
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("dt")
-    LocalDateTime dt;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("rt")
-    double rt;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("rd")
-    double rd;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("ri_m")
-    double riM;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("ri_s")
-    double riS;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("is_est")
-    boolean isEst;
 }
