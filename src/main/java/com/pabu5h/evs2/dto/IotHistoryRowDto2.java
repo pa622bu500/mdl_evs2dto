@@ -40,17 +40,17 @@ public class IotHistoryRowDto2 {
     LocalDateTime dt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("rt")
-    double rt;
+    Double rt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("rd")
-    double rd;
+    Double rd;
 //    @JsonInclude(JsonInclude.Include.NON_NULL)
 //    @JsonProperty("ri_m")
 //    double riM;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("ri_s")
-    double riS;
+    Double riS;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("is_est")
-    boolean isEst;
+    Boolean isEst;
 }
