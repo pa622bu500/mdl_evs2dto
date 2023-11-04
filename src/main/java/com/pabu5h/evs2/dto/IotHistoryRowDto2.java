@@ -52,5 +52,6 @@ public class IotHistoryRowDto2 {
     Double riS;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("is_est")
-    Boolean isEst;
+//    Boolean isEst;
+    Integer isEst; //0: false, 1: true, 2: null
 }
