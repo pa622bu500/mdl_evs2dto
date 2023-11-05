@@ -33,7 +33,7 @@ public class IotHistoryMetaDto {
     @JsonProperty("min_val_non_zero")
     double minValNonZero;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("min_val_non_zero")
+    @JsonProperty("min_val_non_zero_dt")
     LocalDateTime minValNonZeroDt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("avg_val")
