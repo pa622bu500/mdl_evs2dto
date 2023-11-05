@@ -8,6 +8,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter@Setter
 @Builder
 @AllArgsConstructor
@@ -22,11 +24,17 @@ public class IotHistoryMetaDto {
     @JsonProperty("max_val")
     double maxVal;
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("max_val_dt")
+    LocalDateTime maxValDt;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("min_val")
     double minVal;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("min_val_non_zero")
     double minValNonZero;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("min_val_non_zero")
+    LocalDateTime minValNonZeroDt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("avg_val")
     double avgVal;
