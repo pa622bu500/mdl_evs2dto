@@ -54,4 +54,15 @@ public class IotHistoryRowDto2 {
     @JsonProperty("is_est")
 //    Boolean isEst;
     Integer isEst; //0: false, 1: true, 2: null
+
+    public Double getReadingPart(String fieldPartKey, String readingKey){
+        if(readings==null){
+            return null;
+        }
+        Map<String, Object> reading = readings.get(fieldPartKey);
+        if(reading==null){
+            return null;
+        }
+        return (Double) reading.get(readingKey);
+    }
 }
