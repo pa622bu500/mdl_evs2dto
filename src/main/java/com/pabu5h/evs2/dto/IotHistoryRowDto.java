@@ -39,13 +39,14 @@ public class IotHistoryRowDto {
 
     /* sample:
     {
-        "fieldKey1":
+
+        "fieldPartKey1": //example: "a_imp"
         {
             "reading_total": 123.45,
             "reading_total_is_est": false,
             "reading_diff": 0.0,
         },
-        "fieldKey2":
+        "fieldPartKey2":
         {
             "reading_total": 123.45,
             "reading_diff": 0.0,
@@ -56,4 +57,15 @@ public class IotHistoryRowDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("readings")
     Map<String, Map<String, Object>> readings;
+
+    public Double getReadingPart(String fieldPartKey, String readingKey){
+        if(readings==null){
+            return null;
+        }
+        Map<String, Object> reading = readings.get(fieldPartKey);
+        if(reading==null){
+            return null;
+        }
+        return (Double) reading.get(readingKey);
+    }
 }
