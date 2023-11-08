@@ -21,6 +21,9 @@ public class SensorSingleReadingDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("item_sn")
     private String itemSn;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("type")
+    private String type;
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("val")
