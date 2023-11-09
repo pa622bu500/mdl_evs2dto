@@ -65,4 +65,15 @@ public class IotHistoryRowDto2 {
         }
         return (Double) reading.get(readingKey);
     }
+
+    public void setReadingPart(String fieldPartKey, String readingKey, Double value){
+        if(readings==null){
+            return;
+        }
+        Map<String, Object> reading = readings.get(fieldPartKey);
+        if(reading==null){
+            return;
+        }
+        reading.put(readingKey, value);
+    }
 }
