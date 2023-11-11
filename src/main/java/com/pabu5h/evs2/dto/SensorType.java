@@ -5,5 +5,5 @@ public enum SensorType {
     temperature,
     humidity,
     ir,
-    waterLeak,
+    water_leak,
 }
