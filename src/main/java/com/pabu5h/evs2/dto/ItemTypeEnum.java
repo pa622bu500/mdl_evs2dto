@@ -1,6 +1,6 @@
 package com.pabu5h.evs2.dto;
 
-public enum ItemType {
+public enum ItemTypeEnum {
     METER,
     METER_3P,
     SENSOR,
