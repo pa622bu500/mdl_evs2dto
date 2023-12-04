@@ -59,4 +59,13 @@ public class IotHistoryMetaDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("last_val_dt")
     LocalDateTime lastValDt;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("total_count")
+    LocalDateTime totalCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("total_missing_count")
+    LocalDateTime totalMissingCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("total_negative_count")
+    LocalDateTime totalNegativeCount;
 }
