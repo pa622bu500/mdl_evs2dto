@@ -16,10 +16,10 @@ import java.time.LocalDateTime;
 public class IotHistoryMetaDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("dominant_interval")
-    long dominantInterval;
+    Long dominantInterval;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("duration")
-    long duration;
+    Long duration;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("max_val")
     Double maxVal;
@@ -61,11 +61,11 @@ public class IotHistoryMetaDto {
     LocalDateTime lastValDt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("total_count")
-    LocalDateTime totalCount;
+    Long totalCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("total_missing_count")
-    LocalDateTime totalMissingCount;
+    Long totalMissingCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("total_negative_count")
-    LocalDateTime totalNegativeCount;
+    Long totalNegativeCount;
 }
