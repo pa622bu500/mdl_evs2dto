@@ -77,4 +77,7 @@ public class IotHistoryMetaDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("max_interval_minutes")
     Double maxIntervalMinutes;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("raw_data_count")
+    Long rawDataCount;
 }
