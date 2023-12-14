@@ -57,7 +57,7 @@ public class IotHistoryRowDto2 {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("is_err")
-    Boolean isErr;
+    Integer isErr;
 
     public Double getReadingPart(String fieldPartKey, String readingKey){
         if(readings==null){
