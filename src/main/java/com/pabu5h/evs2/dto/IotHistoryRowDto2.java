@@ -39,6 +39,12 @@ public class IotHistoryRowDto2 {
     @JsonProperty("dt")
     LocalDateTime dt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("dt_repeat")
+    Boolean dtRepeat;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("dt_missing")
+    Boolean dtMissing;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("rt")
     Double rt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -56,8 +62,8 @@ public class IotHistoryRowDto2 {
     Integer isEst; //0: false, 1: true, 2: null
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("is_err")
-    Integer isErr;
+    @JsonProperty("is_ot")
+    Integer isOt;
 
     public Double getReadingPart(String fieldPartKey, String readingKey){
         if(readings==null){
