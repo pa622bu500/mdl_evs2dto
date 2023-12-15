@@ -60,35 +60,36 @@ public class IotHistoryMetaDto {
     @JsonProperty("last_val_dt")
     LocalDateTime lastValDt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("total_count")
-    Long totalCount;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("total_missing_count")
-    Long totalMissingCount;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("total_negative_count")
-    Long totalNegativeCount;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("interval_outlier_count")
-    Long intervalOutlierCount;
-    @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("min_non_zero_interval_minutes")
     Double minNonZeroIntervalMinutes;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("max_interval_minutes")
     Double maxIntervalMinutes;
+
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("raw_data_count")
     Long rawDataCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("expected_data_count")
-    Long expectedDataCount;
+    @JsonProperty("expected_reading_count")
+    Long expectedReadingCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("missing_reading_count")
     Long missingReadingCount;
+//    @JsonInclude(JsonInclude.Include.NON_NULL)
+//    @JsonProperty("total_count")
+//    Long totalCount;
+//    @JsonInclude(JsonInclude.Include.NON_NULL)
+//    @JsonProperty("total_missing_count")
+//    Long totalMissingCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("repeated_data_count")
-    Long repeatedDataCount;
+    @JsonProperty("negative_count")
+    Long negativeCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("interval_outlier_count")
+    Long intervalOutlierCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("repeated_reading_count")
+    Long repeatedReadingCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("over_threshold_count")
     Long overThresholdCount;
