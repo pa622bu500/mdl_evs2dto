@@ -80,4 +80,16 @@ public class IotHistoryMetaDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("raw_data_count")
     Long rawDataCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("expected_data_count")
+    Long expectedDataCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("missing_data_count")
+    Long missingDataCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("repeated_data_count")
+    Long repeatedDataCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("error_data_count")
+    Long errorDataCount;
 }
