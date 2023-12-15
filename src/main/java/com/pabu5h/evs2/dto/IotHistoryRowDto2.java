@@ -40,10 +40,10 @@ public class IotHistoryRowDto2 {
     LocalDateTime dt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("dt_repeat")
-    Boolean dtRepeat;
+    Integer dtRepeat;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("dt_missing")
-    Boolean dtMissing;
+    Integer dtMissing;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("rt")
     Double rt;
