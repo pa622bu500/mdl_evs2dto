@@ -82,8 +82,11 @@ public class IotHistoryMetaDto {
 //    @JsonProperty("total_missing_count")
 //    Long totalMissingCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("negative_count")
-    Long negativeCount;
+    @JsonProperty("negative_diff_count")
+    Long negativeDiffCount;
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @JsonProperty("negative_total_count")
+    Long negativeTotalCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     @JsonProperty("interval_outlier_count")
     Long intervalOutlierCount;
