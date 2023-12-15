@@ -90,6 +90,6 @@ public class IotHistoryMetaDto {
     @JsonProperty("repeated_data_count")
     Long repeatedDataCount;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    @JsonProperty("error_data_count")
-    Long errorDataCount;
+    @JsonProperty("over_threshold_count")
+    Long overThresholdCount;
 }
