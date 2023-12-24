@@ -5,4 +5,5 @@ public enum ItemTypeEnum {
     METER_3P,
     METER_IWOW,
     SENSOR,
+    TENANT,
 }
