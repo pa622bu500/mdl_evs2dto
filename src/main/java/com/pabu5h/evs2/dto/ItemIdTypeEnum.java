@@ -4,4 +4,5 @@ public enum ItemIdTypeEnum {
     SN,
     NAME,
     ID,
+    PANEL_TAG,
 }
