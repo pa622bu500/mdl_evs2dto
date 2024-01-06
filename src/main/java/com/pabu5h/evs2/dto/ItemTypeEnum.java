@@ -6,4 +6,7 @@ public enum ItemTypeEnum {
     METER_IWOW,
     SENSOR,
     TENANT,
+    USER,
+    ROLE,
+    METER_GROUP,
 }
