@@ -5,4 +5,5 @@ public enum ItemIdTypeEnum {
     NAME,
     ID,
     PANEL_TAG,
+    ALT_NAME,
 }
