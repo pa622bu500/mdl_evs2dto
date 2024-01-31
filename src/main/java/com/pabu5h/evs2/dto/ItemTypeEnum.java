@@ -9,4 +9,6 @@ public enum ItemTypeEnum {
     USER,
     ROLE,
     METER_GROUP,
+    CONCENTRATOR,
+    CONCENTRATOR_TARIFF,
 }
