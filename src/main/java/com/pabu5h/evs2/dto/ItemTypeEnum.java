@@ -14,4 +14,5 @@ public enum ItemTypeEnum {
     TARIFF_PACKAGE,
     JOB_TYPE,
     JOB,
+    JOB_TYPE_SUB,
 }
