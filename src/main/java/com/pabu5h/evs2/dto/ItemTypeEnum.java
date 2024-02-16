@@ -11,6 +11,7 @@ public enum ItemTypeEnum {
     METER_GROUP,
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
+    TARIFF_PACKAGE,
     JOB_TYPE,
     JOB,
 }
