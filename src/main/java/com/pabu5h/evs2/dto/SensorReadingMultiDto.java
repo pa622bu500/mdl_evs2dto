@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class SensorReadingMultiDeo {
+public class SensorReadingMultiDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String itemName;
     @JsonInclude(JsonInclude.Include.NON_NULL)
