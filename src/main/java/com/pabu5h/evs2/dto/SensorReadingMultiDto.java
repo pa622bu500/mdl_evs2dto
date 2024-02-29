@@ -20,7 +20,7 @@ public class SensorReadingMultiDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private LocalDateTime dt;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String temperature;
+    private Double temperature;
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String humidity;
+    private Double humidity;
 }
