@@ -15,4 +15,5 @@ public enum ItemTypeEnum {
     JOB_TYPE,
     JOB,
     JOB_TYPE_SUB,
+    BILLING_REC,
 }
