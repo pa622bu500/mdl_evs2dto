@@ -12,6 +12,7 @@ public enum ItemTypeEnum {
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
     TARIFF_PACKAGE,
+    TARIFF_PACKAGE_RATE,
     JOB_TYPE,
     JOB,
     JOB_TYPE_SUB,
