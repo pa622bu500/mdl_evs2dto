@@ -13,4 +13,5 @@ public enum HistoryType {
     meter_reading_3p_daily,
     sensor_reading,
     meter_reading_iwow,
+    fleet_health,
 }
