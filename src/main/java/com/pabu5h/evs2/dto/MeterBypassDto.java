@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.module.SimpleModule;
-import com.xt.utils.LocalDateTimeMultiDeserializer;
+import org.pabuff.utils.LocalDateTimeMultiDeserializer;
 import lombok.*;
 
 import java.time.LocalDateTime;
