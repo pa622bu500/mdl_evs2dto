@@ -7,37 +7,6 @@
     <list default="true" id="4822d4f7-3bd8-41ec-a635-82fd4a68077c" name="Changes" comment="add package">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/AcCheckStatusCommandDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/AcCheckStatusCommandDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/AcCommandDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/AcCommandDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/HistoryType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/HistoryType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/IotHistoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/IotHistoryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/IotHistoryDto2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/IotHistoryDto2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/IotHistoryMetaDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/IotHistoryMetaDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/IotHistoryRowDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/IotHistoryRowDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/IotHistoryRowDto2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/IotHistoryRowDto2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/ItemIdTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/ItemIdTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/ItemTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/ItemTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/M3QueryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/M3QueryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/M3QueryPayloadDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/M3QueryPayloadDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/M3ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/M3ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/MeterBypassDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/MeterBypassDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/MeterInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/MeterInfoDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/MeterReading3pDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/MeterReading3pDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/MeterReadingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/MeterReadingDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/PremiseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/PremiseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/QueryCredDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/QueryCredDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/QueryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/QueryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/QueryPayloadDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/QueryPayloadDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/QueryReqDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/QueryReqDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/SensorReadingMultiDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/SensorReadingMultiDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/SensorSingleReadingDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/SensorSingleReadingDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/SensorStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/SensorStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/SensorTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/SensorTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/SvcClaimDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/SvcClaimDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/SvcQueryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/SvcQueryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/TariffRecordDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/TariffRecordDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/TransactionDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/TransactionDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pabu5h/evs2/dto/TransactionLogDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/TransactionLogDto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713033191770</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add package">
+      <option name="closed" value="true" />
+      <created>1713034338398</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713034338398</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
