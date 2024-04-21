@@ -30,6 +30,8 @@ public class SvcClaimDto {
     @JsonProperty("operation")
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private final String operation;
-
+    @JsonProperty("api_key")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private final String apiKey;
 
 }
