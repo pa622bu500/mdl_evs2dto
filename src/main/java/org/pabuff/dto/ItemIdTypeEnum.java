@@ -7,4 +7,5 @@ public enum ItemIdTypeEnum {
     PANEL_TAG,
     ALT_NAME,
     SITE_TAG,
+    SCOPE_STR,
 }
