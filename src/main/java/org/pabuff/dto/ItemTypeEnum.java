@@ -4,6 +4,8 @@ public enum ItemTypeEnum {
     METER,
     METER_3P,
     METER_IWOW,
+    METER_ZSP,
+    METER_MBFC,
     SENSOR,
     TENANT,
     USER,
