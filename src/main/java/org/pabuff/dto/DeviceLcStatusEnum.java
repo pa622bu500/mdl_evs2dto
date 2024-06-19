@@ -5,4 +5,5 @@ public enum DeviceLcStatusEnum {
     NORMAL,
     MAINTENANCE,
     DECOMMISSIONED,
+    BYPASSED,
 }
