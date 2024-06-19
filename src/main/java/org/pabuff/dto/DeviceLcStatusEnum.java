@@ -1,6 +1,6 @@
 package org.pabuff.dto;
 
-public enum DeviceLcStatus {
+public enum DeviceLcStatusEnum {
     COMMISSION_IN_PROGRESS,
     NORMAL,
     MAINTENANCE,
