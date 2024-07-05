@@ -6,4 +6,6 @@ public enum SensorTypeEnum {
     HUMIDITY,
     IR,
     WATER_LEAK,
+    METER,
+    METER_3P,
 }
