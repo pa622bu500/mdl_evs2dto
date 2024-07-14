@@ -35,6 +35,6 @@ public class SvcClaimDto {
     private final String apiKey;
     @JsonProperty("expire_in_minutes")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private final String expireInMinutes;
+    private final Integer expireInMinutes;
 
 }
