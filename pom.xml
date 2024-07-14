@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.0.13</version>
+    <version>3.3.1</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>org.pabuff</groupId>
   <artifactId>evs2dto</artifactId>
-  <version>1.28.5</version>
+  <version>1.28.7</version>
   <name>EVS2 DTO</name>
   <url>http://maven.apache.org</url>
 
@@ -22,8 +22,8 @@
   </distributionManagement>
 
   <properties>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>22</maven.compiler.source>
+    <maven.compiler.target>22</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
@@ -65,11 +65,11 @@
       <version>2.15.2</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.projectlombok</groupId>
-      <artifactId>lombok</artifactId>
-      <version>[1.0.0,)</version>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>org.projectlombok</groupId>-->
+<!--      <artifactId>lombok</artifactId>-->
+<!--      <version>[1.0.0,)</version>-->
+<!--    </dependency>-->
 
 <!--    contains fasterxml jackson-->
     <dependency>
@@ -97,7 +97,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
-        <version>3.3.1</version>
+<!--        <version>3.3.1</version>-->
         <executions>
           <execution>
             <id>attach-sources</id>
