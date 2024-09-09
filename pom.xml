@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.3.1</version>
+    <version>3.3.3</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>org.pabuff</groupId>
   <artifactId>evs2dto</artifactId>
-  <version>1.28.8</version>
+  <version>1.29.0</version>
   <name>EVS2 DTO</name>
   <url>http://maven.apache.org</url>
 
