@@ -6,6 +6,8 @@ public enum DeviceTypeEnum {
 
     MONITOR,
 
+    SENSOR,
+
     SMOKE,
     TEMPERATURE,
     HUMIDITY,
