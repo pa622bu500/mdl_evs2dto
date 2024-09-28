@@ -4,6 +4,8 @@ public enum DeviceTypeEnum {
     METER,
     METER_3P,
 
+    MONITOR,
+
     SMOKE,
     TEMPERATURE,
     HUMIDITY,
@@ -11,4 +13,7 @@ public enum DeviceTypeEnum {
     WATER_LEAK,
 
     CAMERA,
+
+    CONCENTRATOR,
+    GATEWAY,
 }
