@@ -1,7 +1,11 @@
 package org.pabuff.dto;
 
 public enum ItemKindEnum {
+    PROJECT,
+    SITE,
     DEVICE,
+    LOCATION,
+    BUILDING,
     TENANT,
     USER,
     ROLE,
