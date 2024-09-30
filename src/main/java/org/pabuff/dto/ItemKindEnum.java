@@ -1,14 +1,11 @@
 package org.pabuff.dto;
 
 public enum ItemKindEnum {
-    METER,
-    SENSOR,
-    GATEWAY,
+    DEVICE,
     TENANT,
     USER,
     ROLE,
     METER_GROUP,
-    CONCENTRATOR,
     CONCENTRATOR_TARIFF,
     TARIFF_PACKAGE,
     TARIFF_PACKAGE_RATE,

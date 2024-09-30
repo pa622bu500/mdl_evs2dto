@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4822d4f7-3bd8-41ec-a635-82fd4a68077c" name="Changes" comment="enum update">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/ItemKindEnum.java" afterDir="false" />
+    <list default="true" id="4822d4f7-3bd8-41ec-a635-82fd4a68077c" name="Changes" comment="add ItemKindEnum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/ItemKindEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/ItemKindEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718769763301</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add ItemKindEnum">
+      <option name="closed" value="true" />
+      <created>1727670586993</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1727670586993</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +219,7 @@
     <MESSAGE value="add package" />
     <MESSAGE value="add source" />
     <MESSAGE value="enum update" />
-    <option name="LAST_COMMIT_MESSAGE" value="enum update" />
+    <MESSAGE value="add ItemKindEnum" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ItemKindEnum" />
   </component>
 </project>
