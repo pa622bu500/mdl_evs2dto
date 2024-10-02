@@ -1,16 +1,14 @@
 package org.pabuff.dto;
 
 public enum PagItemKindEnum {
-    METER,
-    SENSOR,
-    CAMERA,
-    LOCK,
-    GATEWAY,
+    DEVICE,
     LOCATION,
     SITE,
-    TENANT,
+    BUILDING,
     USER,
     ROLE,
+    TENANT,
+
     METER_GROUP,
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
