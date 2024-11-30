@@ -1,6 +1,6 @@
 package org.pabuff.dto;
 
-public enum PagHistoryType{
+public enum PagHistoryTypeEnum {
     DEVICE_READING,
     FLEET_HEALTH,
 }
