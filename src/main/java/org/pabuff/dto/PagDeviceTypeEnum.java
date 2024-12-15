@@ -1,11 +1,11 @@
 package org.pabuff.dto;
 
 public enum PagDeviceTypeEnum {
-    METER,
-    SENSOR,
-    CAMERA,
-    GATEWAY,
-    LOCK,
-    MONITOR,
-    CONCENTRATOR,
+    meter,
+    sensor,
+    camera,
+    gateway,
+    lock,
+    monitor,
+    concentrator,
 }
