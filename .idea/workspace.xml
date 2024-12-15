@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4822d4f7-3bd8-41ec-a635-82fd4a68077c" name="Changes" comment="add pag iot history classes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/PagScopeTypeEnum.java" afterDir="false" />
+    <list default="true" id="4822d4f7-3bd8-41ec-a635-82fd4a68077c" name="Changes" comment="add PagScopeTypeEnum">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/PagItemKindEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/PagItemKindEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/PagScopeTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/PagScopeTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/PagSensorTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/pabuff/dto/PagSensorTypeEnum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732991292260</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add PagScopeTypeEnum">
+      <option name="closed" value="true" />
+      <created>1734242191844</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1734242191844</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -302,6 +311,7 @@
     <MESSAGE value="add PagSensorTypeEnum" />
     <MESSAGE value="add PagHistoryType" />
     <MESSAGE value="add pag iot history classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="add pag iot history classes" />
+    <MESSAGE value="add PagScopeTypeEnum" />
+    <option name="LAST_COMMIT_MESSAGE" value="add PagScopeTypeEnum" />
   </component>
 </project>

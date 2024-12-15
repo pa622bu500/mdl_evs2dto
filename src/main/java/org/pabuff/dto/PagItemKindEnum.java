@@ -1,19 +1,19 @@
 package org.pabuff.dto;
 
 public enum PagItemKindEnum {
-    DEVICE,
+    device,
 //    DEVICE_GROUP,
 
-    SCOPE,
+    scope,
 //    LOCATION,
 //    LOCATION_GROUP,
 //    BUILDING,
 //    SITE,
 //    SITE_GROUP,
 
-    USER,
-    ROLE,
-    TENANT,
+    user,
+    role,
+    tenant,
 
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
