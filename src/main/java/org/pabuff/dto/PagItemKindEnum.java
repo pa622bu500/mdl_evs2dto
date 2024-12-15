@@ -2,13 +2,14 @@ package org.pabuff.dto;
 
 public enum PagItemKindEnum {
     DEVICE,
-    DEVICE_GROUP,
+//    DEVICE_GROUP,
 
-    LOCATION,
-    LOCATION_GROUP,
-    BUILDING,
-    SITE,
-    SITE_GROUP,
+    SCOPE,
+//    LOCATION,
+//    LOCATION_GROUP,
+//    BUILDING,
+//    SITE,
+//    SITE_GROUP,
 
     USER,
     ROLE,
