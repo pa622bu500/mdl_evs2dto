@@ -6,4 +6,5 @@ public enum PagScopeTypeEnum {
     building,
     site,
     siteGroup,
+    project,
 }
