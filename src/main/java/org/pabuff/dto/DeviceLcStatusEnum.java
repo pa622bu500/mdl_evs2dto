@@ -6,4 +6,5 @@ public enum DeviceLcStatusEnum {
     MAINTENANCE,
     DECOMMISSIONED,
     BYPASSED,
+    MARKED_FOR_DELETE,
 }
