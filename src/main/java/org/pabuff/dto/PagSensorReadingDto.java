@@ -85,17 +85,19 @@ public class PagSensorReadingDto {
     }
 
     public Map<String, Object> toMap() {
-        return Map.of(
-                "id", id,
-                "item_sn", itemSn,
-                "item_name", itemName,
-                "timestamp", timestamp,
-                "co2_val", co2Val,
-                "temperature_val", temperatureVal,
-                "humidity_val", humidityVal,
-                "light_val", irVal,
-                "reading_timestamp", readingTimestamp
-        );
+        Map<String, Object> map = new HashMap<>();
+
+        map.put("id", id);
+        map.put("item_sn", itemSn);
+        map.put("item_name", itemName);
+        map.put("timestamp", timestamp);
+        map.put("co2_val", co2Val);
+        map.put("temperature_val", temperatureVal);
+        map.put("humidity_val", humidityVal);
+        map.put("ir_val", irVal);
+        map.put("reading_timestamp", readingTimestamp);
+
+        return map;
     }
 
     public Map<String, Object> getInsertQuery(String tableName) {
