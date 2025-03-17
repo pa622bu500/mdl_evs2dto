@@ -17,7 +17,7 @@ import java.util.Map;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PagSensorReadingDto {
+public class PagSensorMeterReadingDto {
     private Long id;
 
     @JsonProperty("item_sn")
@@ -49,7 +49,11 @@ public class PagSensorReadingDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private LocalDateTime readingTimestamp;
 
-    public static PagSensorReadingDto fromMap(Map<String, String> map) {
+    @JsonProperty("kwh_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double kwhVal;
+
+    public static PagSensorMeterReadingDto fromMap(Map<String, String> map) {
         String idStr = map.get("id");
         Long id = idStr == null ? null : Long.parseLong(idStr);
 
@@ -71,7 +75,10 @@ public class PagSensorReadingDto {
         String irValStr = map.get("light_val");
         Double irVal = irValStr == null ? null : Double.parseDouble(irValStr);
 
-        return PagSensorReadingDto.builder()
+        String kwhValStr = map.get("kwh_val");
+        Double kwhVal = kwhValStr == null ? null : Double.parseDouble(kwhValStr);
+
+        return PagSensorMeterReadingDto.builder()
                 .id(id)
                 .itemSn(map.get("item_sn"))
                 .itemName(map.get("item_name"))
@@ -81,6 +88,7 @@ public class PagSensorReadingDto {
                 .humidityVal(humidityVal)
                 .irVal(irVal)
                 .readingTimestamp(readingTimestamp)
+                .kwhVal(kwhVal)
                 .build();
     }
 
@@ -96,8 +104,21 @@ public class PagSensorReadingDto {
         map.put("humidity_val", humidityVal);
         map.put("ir_val", irVal);
         map.put("reading_timestamp", readingTimestamp);
+        map.put("kwh_val", kwhVal);
 
         return map;
+//        return Map.of(
+//                "id", id,
+//                "item_sn", itemSn,
+//                "item_name", itemName,
+//                "timestamp", timestamp,
+//                "co2_val", co2Val,
+//                "temperature_val", temperatureVal,
+//                "humidity_val", humidityVal,
+//                "light_val", irVal,
+//                "reading_timestamp", readingTimestamp,
+//                "kwh_val", kwhVal
+//        );
     }
 
     public Map<String, Object> getInsertQuery(String tableName) {
