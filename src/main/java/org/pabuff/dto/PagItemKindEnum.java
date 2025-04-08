@@ -18,7 +18,7 @@ public enum PagItemKindEnum {
 
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
-    TARIFF_PACKAGE,
+    tariffPackage,
     TARIFF_PACKAGE_RATE,
 //    JOB_TYPE,
     JOB,
