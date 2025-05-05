@@ -23,4 +23,11 @@ public class StdRespDto {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private StdErrorDto error;
+
+    public Map<String, Object> getDataResultMap() {
+        if (data != null) {
+            return data.getResultMap();
+        }
+        return null;
+    }
 }
