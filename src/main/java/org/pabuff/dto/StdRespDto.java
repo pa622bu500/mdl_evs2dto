@@ -10,6 +10,7 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashMap;
 import java.util.Map;
 
 @Builder
@@ -32,10 +33,10 @@ public class StdRespDto {
     }
 
     public Map<String, Object> toMap() {
-        return Map.of(
-                "success", success,
-                "data", data.toMap(),
-                "error", error.toMap()
-        );
+        Map<String, Object> map = new HashMap<>();
+        map.put("success", success);
+        map.put("data", data == null ? null : data.toMap());
+        map.put("error", error == null ? null : error.toMap());
+        return map;
     }
 }
