@@ -9,6 +9,7 @@ import java.util.Map;
 @Getter@Setter
 @Builder
 @AllArgsConstructor
+@NoArgsConstructor
 public class StdDataDto {
     @JsonProperty("result_key")
     @JsonInclude(JsonInclude.Include.NON_NULL)
