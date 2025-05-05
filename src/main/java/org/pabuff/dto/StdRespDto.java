@@ -17,21 +17,10 @@ import java.util.Map;
 public class StdRespDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private boolean success;
-    /*
-    data:
-    {
-        result_key: Map<String, Object>
-    }
-     */
+
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Map<String, Object> data;
-    /*
-    error:
-    {
-        code: Enum,
-        message: String,
-    }
-     */
+    private StdDataDto data;
+
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private StdErrorDto error;
 }
