@@ -25,16 +25,7 @@ public class StdDataDto {
     }
     */
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Map<String, Object> result;
-
-    public Map<String, Object> getResultMap () {
-        Object obj = result.get(resultKey);
-        if (obj instanceof Map) {
-            return (Map<String, Object>) obj;
-        } else {
-            return null;
-        }
-    }
+    private Object result;
 
     public Map<String, Object> toMap() {
         return Map.of(
