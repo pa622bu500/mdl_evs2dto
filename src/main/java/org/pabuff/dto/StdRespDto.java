@@ -30,4 +30,12 @@ public class StdRespDto {
         }
         return null;
     }
+
+    public Map<String, Object> toMap() {
+        return Map.of(
+                "success", success,
+                "data", data.toMap(),
+                "error", error.toMap()
+        );
+    }
 }

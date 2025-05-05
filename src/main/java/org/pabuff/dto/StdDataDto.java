@@ -35,4 +35,11 @@ public class StdDataDto {
             return null;
         }
     }
+
+    public Map<String, Object> toMap() {
+        return Map.of(
+                "result_key", resultKey,
+                "result", result
+        );
+    }
 }

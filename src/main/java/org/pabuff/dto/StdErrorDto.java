@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.pabuff.utils.ApiCode;
 
+import java.util.Map;
+
 @Getter@Setter
 @Builder
 public class StdErrorDto {
@@ -13,4 +15,11 @@ public class StdErrorDto {
     private ApiCode code;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String message;
+
+    public Map<String, Object> toMap() {
+        return Map.of(
+                "code", code,
+                "message", message
+        );
+    }
 }
