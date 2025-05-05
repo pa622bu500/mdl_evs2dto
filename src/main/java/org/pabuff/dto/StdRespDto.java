@@ -6,6 +6,7 @@ package org.pabuff.dto;
 */
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +16,7 @@ import java.util.Map;
 
 @Builder
 @Getter@Setter
+@AllArgsConstructor
 public class StdRespDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private boolean success;
