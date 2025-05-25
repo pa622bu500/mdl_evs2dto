@@ -15,6 +15,7 @@ public enum PagItemKindEnum {
     role,
     tenant,
     jobType,
+    billingRec,
 
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
@@ -23,5 +24,5 @@ public enum PagItemKindEnum {
 //    JOB_TYPE,
     JOB,
     JOB_TYPE_SUB,
-    BILLING_REC,
+//    BILLING_REC,
 }
