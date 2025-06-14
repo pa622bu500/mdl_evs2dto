@@ -16,6 +16,7 @@ public enum PagItemKindEnum {
     tenant,
     jobType,
     bill,
+    meterGroup,
 
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
