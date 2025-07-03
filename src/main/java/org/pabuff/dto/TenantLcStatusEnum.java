@@ -5,7 +5,8 @@ public enum TenantLcStatusEnum {
     OFFBOARDING,
     PENDING,
     NORMAL,
-    ACTIVE, // This is an alias for NORMAL
+    ACTIVE,
+    DEFAULTED,
     TERMINATED,
     MARKED_FOR_DELETE,
 }
