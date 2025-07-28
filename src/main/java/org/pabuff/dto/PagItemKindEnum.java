@@ -18,6 +18,7 @@ public enum PagItemKindEnum {
     bill,
     meterGroup,
     finance,
+    landlord,
 
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
