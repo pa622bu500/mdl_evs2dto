@@ -53,6 +53,71 @@ public class PagSensorMeterReadingDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Double kwhVal;
 
+    @JsonProperty("vln_a_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double vlnAValue;
+
+    @JsonProperty("vln_b_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double vlnBValue;
+
+    @JsonProperty("vln_c_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double vlnCValue;
+
+    @JsonProperty("vln_avg_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double vlnAvgValue;
+
+    @JsonProperty("vll_ab_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double vllAbValue;
+
+    @JsonProperty("vll_bc_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double vllBcValue;
+
+    @JsonProperty("vll_ca_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double vllCaValue;
+
+    @JsonProperty("vll_avg_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double vllAvgValue;
+
+    @JsonProperty("i_a_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double iaValue;
+
+    @JsonProperty("i_b_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double ibValue;
+
+    @JsonProperty("i_c_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double icValue;
+
+    @JsonProperty("i_avg_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Double iAvgValue;
+
+    @JsonProperty("toggle_switch_status_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Boolean toggleSwitchStatus;
+
+    @JsonProperty("local_mode_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Boolean localMode;
+
+    @JsonProperty("fan_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Boolean fan;
+
+    @JsonProperty("remote_mode_val")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    private Boolean remoteMode;
+
+
     public static PagSensorMeterReadingDto fromMap(Map<String, String> map) {
         String idStr = map.get("id");
         Long id = idStr == null ? null : Long.parseLong(idStr);
@@ -78,6 +143,39 @@ public class PagSensorMeterReadingDto {
         String kwhValStr = map.get("kwh_val");
         Double kwhVal = kwhValStr == null ? null : Double.parseDouble(kwhValStr);
 
+        String vlnAValueStr = map.get("vln_a_val");
+        Double vlnAValue = vlnAValueStr == null ? null : Double.parseDouble(vlnAValueStr);
+        String vlnBValueStr = map.get("vln_b_val");
+        Double vlnBValue = vlnBValueStr == null ? null : Double.parseDouble(vlnBValueStr);
+        String vlnCValueStr = map.get("vln_c_val");
+        Double vlnCValue = vlnCValueStr == null ? null : Double.parseDouble(vlnCValueStr);
+        String vlnAvgValueStr = map.get("vln_avg_val");
+        Double vlnAvgValue = vlnAvgValueStr == null ? null : Double.parseDouble(vlnAvgValueStr);
+        String vllAbValueStr = map.get("vll_ab_val");
+        Double vllAbValue = vllAbValueStr == null ? null : Double.parseDouble(vllAbValueStr);
+        String vllBcValueStr = map.get("vll_bc_val");
+        Double vllBcValue = vllBcValueStr == null ? null : Double.parseDouble(vllBcValueStr);
+        String vllCaValueStr = map.get("vll_ca_val");
+        Double vllCaValue = vllCaValueStr == null ? null : Double.parseDouble(vllCaValueStr);
+        String vllAvgValueStr = map.get("vll_avg_val");
+        Double vllAvgValue = vllAvgValueStr == null ? null : Double.parseDouble(vllAvgValueStr);
+        String iaValueStr = map.get("i_a_val");
+        Double iaValue = iaValueStr == null ? null : Double.parseDouble(iaValueStr);
+        String ibValueStr = map.get("i_b_val");
+        Double ibValue = ibValueStr == null ? null : Double.parseDouble(ibValueStr);
+        String icValueStr = map.get("i_c_val");
+        Double icValue = icValueStr == null ? null : Double.parseDouble(icValueStr);
+        String iAvgValueStr = map.get("i_avg_val");
+        Double iAvgValue = iAvgValueStr == null ? null : Double.parseDouble(iAvgValueStr);
+        String toggleSwitchStatusStr = map.get("toggle_switch_status_val");
+        Boolean toggleSwitchStatus = toggleSwitchStatusStr == null ? null : Boolean.parseBoolean(toggleSwitchStatusStr);
+        String localModeStr = map.get("local_mode_val");
+        Boolean localMode = localModeStr == null ? null : Boolean.parseBoolean(localModeStr);
+        String fanStr = map.get("fan_val");
+        Boolean fan = fanStr == null ? null : Boolean.parseBoolean(fanStr);
+        String remoteModeStr = map.get("remote_mode_val");
+        Boolean remoteMode = remoteModeStr == null ? null : Boolean.parseBoolean(remoteModeStr);
+
         return PagSensorMeterReadingDto.builder()
                 .id(id)
                 .itemSn(map.get("item_sn"))
@@ -89,6 +187,22 @@ public class PagSensorMeterReadingDto {
                 .irVal(irVal)
                 .readingTimestamp(readingTimestamp)
                 .kwhVal(kwhVal)
+                .vlnAValue(vlnAValue)
+                .vlnBValue(vlnBValue)
+                .vlnCValue(vlnCValue)
+                .vlnAvgValue(vlnAvgValue)
+                .vllAbValue(vllAbValue)
+                .vllBcValue(vllBcValue)
+                .vllCaValue(vllCaValue)
+                .vllAvgValue(vllAvgValue)
+                .iaValue(iaValue)
+                .ibValue(ibValue)
+                .icValue(icValue)
+                .iAvgValue(iAvgValue)
+                .toggleSwitchStatus(toggleSwitchStatus)
+                .localMode(localMode)
+                .fan(fan)
+                .remoteMode(remoteMode)
                 .build();
     }
 
@@ -105,6 +219,22 @@ public class PagSensorMeterReadingDto {
         map.put("ir_val", irVal);
         map.put("reading_timestamp", readingTimestamp);
         map.put("kwh_val", kwhVal);
+        map.put("vln_a_val", vlnAValue);
+        map.put("vln_b_val", vlnBValue);
+        map.put("vln_c_val", vlnCValue);
+        map.put("vln_avg_val", vlnAvgValue);
+        map.put("vll_ab_val", vllAbValue);
+        map.put("vll_bc_val", vllBcValue);
+        map.put("vll_ca_val", vllCaValue);
+        map.put("vll_avg_val", vllAvgValue);
+        map.put("i_a_val", iaValue);
+        map.put("i_b_val", ibValue);
+        map.put("i_c_val", icValue);
+        map.put("i_avg_val", iAvgValue);
+        map.put("toggle_switch_status_val", toggleSwitchStatus);
+        map.put("local_mode_val", localMode);
+        map.put("fan_val", fan);
+        map.put("remote_mode_val", remoteMode);
 
         return map;
 //        return Map.of(
