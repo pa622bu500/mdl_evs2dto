@@ -9,4 +9,5 @@ public enum PagDeviceTypeEnum {
     monitor,
     concentrator,
     meterGroup,
+    mcu,
 }
