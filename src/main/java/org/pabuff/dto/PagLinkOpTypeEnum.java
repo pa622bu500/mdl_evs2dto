@@ -1,6 +1,6 @@
 package org.pabuff.dto;
 
-public enum PagLinkOpEnum {
+public enum PagLinkOpTypeEnum {
     gatewayToDevice,
     none,
 }
