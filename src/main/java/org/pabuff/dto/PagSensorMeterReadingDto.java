@@ -49,7 +49,7 @@ public class PagSensorMeterReadingDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private LocalDateTime readingTimestamp;
 
-    @JsonProperty("kwh_val")
+    @JsonProperty("val")
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Double kwhVal;
 
@@ -140,7 +140,7 @@ public class PagSensorMeterReadingDto {
         String irValStr = map.get("light_val");
         Double irVal = irValStr == null ? null : Double.parseDouble(irValStr);
 
-        String kwhValStr = map.get("kwh_val");
+        String kwhValStr = map.get("val");
         Double kwhVal = kwhValStr == null ? null : Double.parseDouble(kwhValStr);
 
         String vlnAValueStr = map.get("vln_a_val");
@@ -218,7 +218,7 @@ public class PagSensorMeterReadingDto {
         map.put("humidity_val", humidityVal);
         map.put("ir_val", irVal);
         map.put("reading_timestamp", readingTimestamp);
-        map.put("kwh_val", kwhVal);
+        map.put("val", kwhVal);
         map.put("vln_a_val", vlnAValue);
         map.put("vln_b_val", vlnBValue);
         map.put("vln_c_val", vlnCValue);
@@ -247,7 +247,7 @@ public class PagSensorMeterReadingDto {
 //                "humidity_val", humidityVal,
 //                "light_val", irVal,
 //                "reading_timestamp", readingTimestamp,
-//                "kwh_val", kwhVal
+//                "val", kwhVal
 //        );
     }
 
