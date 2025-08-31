@@ -1,13 +1,13 @@
 package org.pabuff.dto;
 
 public enum PagDeviceCatEnum {
-    METER("meter", "meter", "m"),
-    SENSOR("sensor", "Sensor", "s"),
-    CAMERA("camera", "Camera", "cam"),
-    LOCK("lock", "Lock", "l"),
-    GATEWAY("gateway", "Gateway", "gw"),
-    METER_GROUP("meter_group", "Meter Group", "mg"),
-    MCU("mcu", "MCU", "mcu");
+    meter("meter", "Meter", "m"),
+    sensor("sensor", "Sensor", "s"),
+    camera("camera", "Camera", "cam"),
+    lock("lock", "Lock", "l"),
+    gateway("gateway", "Gateway", "gw"),
+    meterGroup("meter_group", "Meter Group", "mg"),
+    mcu("mcu", "MCU", "mcu");
 
     private final String value;
     private final String label;
