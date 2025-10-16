@@ -19,6 +19,7 @@ public enum PagItemKindEnum {
     meterGroup,
     finance,
     landlord,
+    alert,
 
     CONCENTRATOR,
     CONCENTRATOR_TARIFF,
