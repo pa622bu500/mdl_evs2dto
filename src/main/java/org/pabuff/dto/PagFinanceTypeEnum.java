@@ -1,7 +1,7 @@
 package org.pabuff.dto;
 
 public enum PagFinanceTypeEnum {
-    soa,
+    tenantSoa,
     payment,
     paymentApply,
 }
