@@ -28,7 +28,10 @@ public class PagSensorMeterReadingDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String itemName;
 
+    @JsonProperty("timestamp")
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private LocalDateTime timestamp;
+
     @JsonProperty("co2_val")
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Double co2Val;
