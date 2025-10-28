@@ -148,13 +148,13 @@ public class PagMeterReadingDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Double wTotalValue;
 
-    @JsonProperty("kwh")
+    @JsonProperty("kwh_total")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Double kwhValue;
+    private Double kwhTotalValue;
 
-    @JsonProperty("kvarh")
+    @JsonProperty("kvarh_total")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Double kvarhValue;
+    private Double kvarhTotalValue;
 
     public static PagMeterReadingDto fromMap(Map<String, String> map) {
         String idStr = map.get("id");
@@ -195,8 +195,8 @@ public class PagMeterReadingDto {
         Double wBValue = map.get("w_b") == null ? null : Double.parseDouble(map.get("w_b"));
         Double wCValue = map.get("w_c") == null ? null : Double.parseDouble(map.get("w_c"));
         Double wTotalValue = map.get("w_total") == null ? null : Double.parseDouble(map.get("w_total"));
-        Double kwhValue = map.get("kwh") == null ? null : Double.parseDouble(map.get("kwh"));
-        Double kvarhValue = map.get("kvarh") == null ? null : Double.parseDouble(map.get("kvarh"));
+        Double kwhTotalValue = map.get("kwh_total") == null ? null : Double.parseDouble(map.get("kwh_total"));
+        Double kvarhTotalValue = map.get("kvarh_total") == null ? null : Double.parseDouble(map.get("kvarh_total"));
 
         return PagMeterReadingDto.builder()
                 .id(id)
@@ -231,8 +231,8 @@ public class PagMeterReadingDto {
                 .wBValue(wBValue)
                 .wCValue(wCValue)
                 .wTotalValue(wTotalValue)
-                .kwhValue(kwhValue)
-                .kvarhValue(kvarhValue)
+                .kwhTotalValue(kwhTotalValue)
+                .kvarhTotalValue(kvarhTotalValue)
                 .build();
     }
 
@@ -272,8 +272,8 @@ public class PagMeterReadingDto {
         map.put("w_b", wBValue);
         map.put("w_c", wCValue);
         map.put("w_total", wTotalValue);
-        map.put("kwh", kwhValue);
-        map.put("kvarh", kvarhValue);
+        map.put("kwh_total", kwhTotalValue);
+        map.put("kvarh_total", kvarhTotalValue);
 
         return map;
     }
