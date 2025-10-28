@@ -60,9 +60,9 @@ public class PagMeterReadingDto {
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Double vCAValue;
 
-    @JsonProperty("v_l_avg")
+    @JsonProperty("v_ll_avg")
     @JsonInclude(JsonInclude.Include.NON_NULL)
-    private Double vLAvgValue;
+    private Double vllAvgValue;
 
     @JsonProperty("i_a")
     @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -173,7 +173,7 @@ public class PagMeterReadingDto {
         Double vABValue = map.get("v_ab") == null ? null : Double.parseDouble(map.get("v_ab"));
         Double vBCValue = map.get("v_bc") == null ? null : Double.parseDouble(map.get("v_bc"));
         Double vCAValue = map.get("v_ca") == null ? null : Double.parseDouble(map.get("v_ca"));
-        Double vLAvgValue = map.get("v_l_avg") == null ? null : Double.parseDouble(map.get("v_l_avg"));
+        Double vllAvgValue = map.get("v_ll_avg") == null ? null : Double.parseDouble(map.get("v_ll_avg"));
         Double iAValue = map.get("i_a") == null ? null : Double.parseDouble(map.get("i_a"));
         Double iBValue = map.get("i_b") == null ? null : Double.parseDouble(map.get("i_b"));
         Double iCValue = map.get("i_c") == null ? null : Double.parseDouble(map.get("i_c"));
@@ -209,7 +209,7 @@ public class PagMeterReadingDto {
                 .vABValue(vABValue)
                 .vBCValue(vBCValue)
                 .vCAValue(vCAValue)
-                .vLAvgValue(vLAvgValue)
+                .vllAvgValue(vllAvgValue)
                 .iAValue(iAValue)
                 .iBValue(iBValue)
                 .iCValue(iCValue)
@@ -250,7 +250,7 @@ public class PagMeterReadingDto {
         map.put("v_ab", vABValue);
         map.put("v_bc", vBCValue);
         map.put("v_ca", vCAValue);
-        map.put("v_l_avg", vLAvgValue);
+        map.put("v_ll_avg", vllAvgValue);
         map.put("i_a", iAValue);
         map.put("i_b", iBValue);
         map.put("i_c", iCValue);
